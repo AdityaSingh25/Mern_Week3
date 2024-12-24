@@ -1,0 +1,53 @@
+// generating jwt -->> generate a jwt {username : username , email: email} ->> for this object generate jwt token
+// decoding jwt -->> anyone can do like in jwt.io site
+// verifying jwt --->> only the bckend which generates that jwt token can verify it using the passwoed form which jwt generates
+
+// const express = require("express");
+// const jwt = require("jsonwebtoken");
+// const app = express();
+
+// const value = {
+//   name: "Aditya",
+//   accNo: 12345,
+// };
+
+// const token = jwt.sign(value, "secret");
+
+// console.log(token);
+// // this token has been generated using this seceret, and hence this token can only be verified using this secret
+
+// const isVerified = jwt.verify(
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRpdHlhIiwiYWNjTm8iOjEyMzQ1LCJpYXQiOjE3MzQ5MjE3MDd9.Mp2O4_ddzFjWtjp_VKJit8-7Wg07MPs-LlgTL41GcGI", "secret"
+// );
+// console.log(isVerified);
+
+// app.listen(3000);
+
+//---------------------------------------------------------------------------------------------------------------
+
+// TRY CATCH
+
+// let a;
+// console.log(a.length); // as a in undefined so a.length will throw an error and next lines of code will not execute.
+// console.log("dede"); // this line will not run
+
+// //but catch will help us to run the next lines of code also as we are cathing the exception.
+
+try {
+  let b;
+  console.log(b.length);
+  console.log("inside try after error line"); // this will not run as above line has an exception
+} catch (e) {
+  console.log(e);
+}
+
+console.log("outside all");// so this line will always run
+
+
+// so if inside the try block if there is a error then catch block will run and continue the rest lines of code
+
+
+// if there is no error then try whole block will run, catch will not run then after catch all code will run
+
+// catch will only run if there is an excetion in try block
+
