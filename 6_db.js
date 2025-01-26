@@ -13,7 +13,7 @@ mongoose.connect(
   "mongodb+srv://admin:Shubh%401234@cluster0.gk9ec.mongodb.net/user_app" //user_app is the db name
 );
 
-//Users is the table name
+
 const User = mongoose.model("Users", {
   name: String,
   email: String,
